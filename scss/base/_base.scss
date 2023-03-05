@@ -1,0 +1,121 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: min-content;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* Fin CSS Reset */
+
+/* Importación de fuentes Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Fin de importación de fuentes Google Fonts */
+// .horizontal-card-img{
+//     max-width: auto;
+//     object-fit: cover;
+// }
+
+.title {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 2px 3px 3px 0 #86868685, 0 0 0 1px #d4d4d5;
+    margin-top: 20px;
+    height: min-content;
+
+    &-block {
+        font-size: 1em;
+        position: relative;
+        margin: 0;
+        padding: 1em;
+        border: none;
+        border-top: 1px solid rgba(34, 36, 38, .1);
+        box-shadow: none;
+    }
+
+    &-text{
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+.btn-primary {
+    margin-top: auto;
+}
+
+.feed-card{
+    font-family: "Ubuntu", sans-serif;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 300ms;
+}
+}
+.horizontal-card-uppertext {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.horizontal-card-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.horizontal-card-img{
+    object-fit: cover;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feed-btn{
+    width: 50%;
+    align-self: center  ;
+}
+
+.section-header{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #262efb;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
