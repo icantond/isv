@@ -13,7 +13,7 @@ $mensaje_web_enfermeria . = "Teléfono de contacto " . $codigo_area . $celular .
 $mensaje_web_enfermeria . = "Mensaje: " . $mensaje . "\r\n";
 $mensaje_web_enfermeria . = "Enviado el " . date(d/m/Y, time());
 
-$destinatario = "cantondebat@outlook.com";
+$destinatario = "m_ar23@hotmail.com";
 $asunto = "Mensaje Formulario ISV Enfermeria";
 
 mail($destinatario, $asunto, utf8_decode($mensaje_web_enfermeria), $header);
