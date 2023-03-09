@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descrition" content="Espacio de educación superior en Villaguay, Entre Ríos, Argentina.">
+    <meta name="description" content="Espacio de educación superior en Villaguay, Entre Ríos, Argentina.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -19,83 +19,102 @@
 </head>
 
 <body>
+
     <!-- Comienzo de Navbar -->
-    <div class="nav-hero-container">
-        <nav class="navbar navbar-expand-md header">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="brand-logo" src="./img/logo-png.png"
-                        alt="Logotipo de ISV: Instituto Superior Villaguay">
-                </a>
-                <h1 class="hidden">Instituto Superior Villaguay</h1>
-                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse navbar__list" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0 offset-md-1 offset-xl-5 navbar-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/carreras.html">Carreras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/galeria.html">Contacto</a>
-                    </ul>
-                </div>
+    <!-- <div class="nav-hero-container"> -->
+    <nav class="navbar navbar-expand-md header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-logo" src="./img/logo-png.png" alt="Logotipo de ISV: Instituto Superior Villaguay">
+            </a>
+            <h1 class="hidden">Instituto Superior Villaguay</h1>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar__list" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 offset-xl-2 navbar-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/institucional.html">INSTITUCIONAL</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CARRERAS
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pages/enfermeria.html">Tecnicatura Superior en
+                                    Enfermería</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/galeria.html">CONTACTO</a>
+                </ul>
             </div>
-        </nav>
-        <!-- Fin de Navbar -->
+        </div>
+    </nav>
+    <!-- Fin de Navbar -->
 
 
-        <!-- Comienzo de hero -->
-        <section class="hero container-fluid p-5">
-            <div class="row">
-                <div class="hero-text-container col-12 col-lg-6">
-                    <h2 class="hero-text">Educación para Transformar tu vida.</h2>
-                    <p class="hero-paragraph">Nuestro instituto de educación superior se dedica a brindar herramientas
-                        para
-                        transformar tu vida a través de la educación. Te ofrecemos una formación integral, con enfoque
-                        en el
-                        desarrollo personal y profesional, para que puedas alcanzar tus metas y objetivos.</p>
-                    <!-- <button class="btn-rounded hero-btn">Más información</button> -->
-                    <button type="button" class="btn btn-warning col-5 col-md-4 col-lg-3 offset-4">Más
-                        información</button>
-                </div>
-                <img src="./img/cover.png" alt="Dos jóvenes estudiantes mujeres sonriendo."
-                    class="hero-img col-12 col-lg-6 img-fluid">
+    <!-- Comienzo de hero -->
+    <section class="hero container-fluid p-5">
+        <div class="row hero-container">
+            <div class="hero-text-container col-12 col-lg-6">
+                <h2 class="hero-text">Educación para Transformar tu vida.</h2>
+                <p class="hero-paragraph">Nuestro instituto de educación superior se dedica a brindar herramientas
+                    para
+                    transformar tu vida a través de la educación. Te ofrecemos una formación integral, con enfoque
+                    en el
+                    desarrollo personal y profesional, para que puedas alcanzar tus metas y objetivos.</p>
+                <a href="./pages/institucional.html" type="button"
+                    class="btn btn-outline-warning col-8 col-md-4 align-self-center">Más
+                    información</a>
             </div>
-        </section>
+            <div class="hero-img-container col-12 col-lg-6 m-auto">
+                <img src="./img/cover.png" alt="Dos jóvenes estudiantes mujeres sonriendo." class="hero-img  img-fluid">
+            </div>
+        </div>
+    </section>
+    <!-- </div> -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-    </div>
-
-<!-- TARJETAS HORIZONTALES CON LAS CARRERAS OFRECIDAS -->
+    <!-- TARJETAS HORIZONTALES CON LAS CARRERAS OFRECIDAS -->
     <section class="section carreras">
         <h3 class="section-header">Oferta Académica</h3>
 
         <div class="card m-5">
             <div class="row">
                 <img src="./img/carrera-enfermeria.jpg" alt="" class="horizontal-card-img col-md-6">
-                <div class="col-md-6 px-3">
+                <div class="col-md-6 px-3 horizontal-card-content">
                     <div class="card-block px-6">
-                        <h5 class="horizontal-card-uppertext">Inscripciones abiertas</h5>
+                        <h5 class="horizontal-card-uppertext">Muy pronto se abren las inscripciones</h5>
                         <h4 class="horizontal-card-title">Tecnicatura Superior en Enfermería </h4>
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam facere distinctio eaque aut molestias quod sed, nisi alias, tempora animi maxime accusamus fugit blanditiis nesciunt obcaecati, quae recusandae natus.
+                            El "Instituto Superior Educativo Villaguay" informa a la comunidad que mediante la
+                            <a href="./img/resolucion-cge.1.pdf" target="_blank">Resolución 0405/2023 del Consejo General de Educación</a>, ha sido incorporado al sistema de
+                            Enseñanza Oficial y autorizado a dictar, en la ciudad de Villaguay, la carrera "Tecnicatura
+                            Superior en enfermeria", que otorga títulos oficiales de dicha organización gubernamental
+                            con validez nacional.
+                            <br>
+                            Nuestra actividad educativa se rige por las disposiciones de la <a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/ley-de-educacion-tecnico-profesional" target="_blank">Ley de Educacion Tecnico
+                            Profesional N° 26.058</a> en el marco de la normativa relativa a la Educación Superior en la
+                            formación de Técnicos Superiores en areas ocupacionales específicas y de la Formacion
+                            Profesional en este caso en el area Enfermeria.
+
                         </p>
                         <br>
-                        <a href="#" class="mt-auto btn btn-outline-primary">Inscribirse</a>
+                        <a href="./pages/enfermeria.html" class="mt-2 btn btn-outline-primary">Más información</a>
                     </div>
                 </div>
 
             </div>
         </div>
-<!-- FIN DE TARJETAS HORIZONTALES -->
+        <!-- FIN DE TARJETAS HORIZONTALES -->
 
     </section>
 
@@ -106,6 +125,23 @@
         </div>
     </section>
     <script src="./js/feed.js"></script>
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <ul class="footer-nav-links">
+                <li class="footer-nav-li"><a href="./index.html" class="footer-nav-a">Inicio</a></li>
+                <li class="footer-nav-li"><a href="./pages/institucional.html" class="footer-nav-a">Institucional</a>
+                </li>
+                <li class="footer-nav-li"><a href="./pages/enfermeria.html" class="footer-nav-a">Enfermería</a></li>
+                <li class="footer-nav-li"><a href="./pages/contacto.html" class="footer-nav-a">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

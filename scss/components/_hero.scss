@@ -1,11 +1,11 @@
 
 .hero{
+    background: linear-gradient(180deg, #1b20ab 0%, #262efb 98%);
     color: #fff;
-    font-family: "Ubuntu", sans-serif;
-    
+    font-family: "Ubuntu", sans-serif;    
     &-text{
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 400;
         font-family: 'Ubuntu', sans-serif;
     }
 
@@ -18,7 +18,7 @@
     &-text-container{
         display: flex;
         flex-direction: column;    
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 1rem;
     }
 
@@ -26,5 +26,4 @@
         width: 30%;
         align-self: center;
     }
-
 }

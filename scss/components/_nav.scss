@@ -1,25 +1,42 @@
-.nav-hero-container {
-    background: linear-gradient(180deg, #0f3b6b 0%, #262efb 98%);
+.navbar{
+    background: linear-gradient(180deg, #0f3b6b 0%, #1b20ab 98%);
+    }
+
+
+.hidden { //el h1 se oculta ya que aparece el texto en el logo, para posicionamiento en SEO.
+    display: none;
+    position: absolute;
+    font-size: 0.1rem;
 }
 
-.hidden {
-    display: none;
-}
 
 .nav-link {
     color: #fff;
     font-family: "Ubuntu", sans-serif;
-    font-size: 1.5rem;
-}
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.1rem;
+    text-align: center;
+
+        &:hover{
+        transform: scale(1.1);
+        transition: 300ms;
+        color:#fff;
+        font-weight: 500;
+        }
+    }  
 
 .brand-logo {
-    width: 60%;
     margin-left: 5rem;
+    max-height: 100px;
 }
 
-@media (max-width: 546px) {
+@media (max-width: 768px) {
     .brand-logo {
         margin-left: 0;
-        width: 50%;
+        width: 60%;
     }
+}
+.dropdown-toggle:focus{
+    color: blue;
 }

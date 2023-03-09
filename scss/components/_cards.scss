@@ -1,0 +1,68 @@
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 2px 3px 3px 0 #86868685, 0 0 0 1px #d4d4d5;
+    margin-top: 20px;
+    height: min-content;
+
+    &-block {
+        font-size: 1em;
+        position: relative;
+        margin: 0;
+        padding: 1em;
+        border: none;
+        border-top: 1px solid rgba(34, 36, 38, .1);
+        box-shadow: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &-text {
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: center;
+
+        
+    }
+}
+
+.feed-card {
+    font-family: "Ubuntu", sans-serif;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 300ms;
+    }
+}
+
+.horizontal-card-uppertext {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.horizontal-card-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.horizontal-card-img {
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feed-btn {
+    width: 50%;
+    align-self: center;
+}
