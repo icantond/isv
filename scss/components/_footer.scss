@@ -1,27 +1,44 @@
-
-.footer{
+.footer {
     background-color: $azul-oscuro;
     min-height: 25vh;
-    padding: 5rem;
+    padding: 2rem 3rem;
     margin-top: 5rem;
     font-family: $primary-font;
-}
 
-.footer-nav{
-    width: min-content;
+    &-nav {
+        // width: min-content;
 
-    &-a{
-    font-size: 1.3rem;
-    font-weight: 300;
-    display: block;
-    margin: 1rem;
-    color: #fff;
-        
-        &:hover{
-        transform: scale(1.1);
-        transition: 300ms;
-        color: #F2DC0C;
-        font-weight: 500;
+        &-a {
+            font-size: 1.3rem;
+            font-weight: 300;
+            display: block;
+            margin: 1rem;
+            color: #fff;
+            text-align: center;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 300ms;
+                color: #f2dc0c;
+                font-weight: 500;
+            }
+        }
     }
-    }  
+    &-datos{
+        color: #fff;
+        font-family: $primary-font;
+        display: block;
+        text-align: center;
+        
+        &-nombre{
+            font-size: 1.2rem;
+        }
+        &-text{
+            font-size: 1rem;
+        }
+    }
+
+    &-brand img{
+        margin: auto;
+    }
 }

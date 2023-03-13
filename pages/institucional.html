@@ -54,7 +54,7 @@
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">CONTACTO</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-form" href="#">CONTACTO</a>
                 </ul>
             </div>
         </div>
@@ -62,50 +62,157 @@
     <!-- Fin de Navbar -->
     <main>
 
-            <!-- TARJETAS HORIZONTALES CON LAS CARRERAS OFRECIDAS -->
-    <section class="section carreras">
-        <h3 class="section-header">Institucional</h3>
+        <!-- TARJETAS HORIZONTALES CON LAS CARRERAS OFRECIDAS -->
+        <section class="section carreras">
+            <h3 class="section-header">Institucional</h3>
 
-        <div class="card m-5">
-            <div class="row">
-                <img src="../img/villaguay.jpg" alt="" class="horizontal-card-img col-md-6">
-                <div class="col-md-6 px-3 horizontal-card-content">
-                    <div class="card-block px-6">
-                        <p class="card-text">
-                            El Instituyo Superior Villaguay fue creado en el año 2023 a iniciativa del ISEV –Instituto Superior Educativo Villaguay Asociación Civil- que nuclea entre sus socios fundadores a miembros de las instituciones más importantes de la sociedad civil de la ciudad de Villaguay, como así también de los sectores que más participación tienen en el ámbito social y educativo.
-                        </p>
+            <div class="card m-5">
+                <div class="row">
+                    <img src="../img/villaguay.jpg" alt="" class="horizontal-card-img col-md-6">
+                    <div class="col-md-6 px-3 horizontal-card-content">
+                        <div class="card-block px-6">
+                            <p class="card-text">
+                                El Instituyo Superior Villaguay fue creado en el año 2023 a iniciativa del ISEV
+                                –Instituto Superior Educativo Villaguay Asociación Civil- que nuclea entre sus socios
+                                fundadores a miembros de las instituciones más importantes de la sociedad civil de la
+                                ciudad de Villaguay, como así también de los sectores que más participación tienen en el
+                                ámbito social y educativo.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card m-5">
-            <div class="row">
-                <div class="col-md-6 px-3 horizontal-card-content">
-                    <div class="card-block px-6">
-                        <p class="card-text">
-                            Mediante Disposición N° 038 de la Dirección de Educación de Gestión Privada, el Instituto Superior Villaguay se
-                            incorpora a la enseñanza oficial del Consejo General de Educación, otorgándole el D-258 para el Primer Año de la
-                            carrera “Tecnicatura Superior en Enfermería" aprobada por <a href="../img/resolucion-cge.1.pdf" target="_blank">Resolución N° 620/15 CGE</a> para la cohorte 2023.
-                        </p>
+            <div class="card m-5">
+                <div class="row">
+                    <div class="col-md-6 px-3 horizontal-card-content">
+                        <div class="card-block px-6">
+                            <p class="card-text">
+                                Mediante Disposición N° 038 de la Dirección de Educación de Gestión Privada, el
+                                Instituto Superior Villaguay se
+                                incorpora a la enseñanza oficial del Consejo General de Educación, otorgándole el D-258
+                                para el Primer Año de la
+                                carrera “Tecnicatura Superior en Enfermería" aprobada por <a
+                                    href="../img/resolucion-cge.1.pdf" target="_blank">Resolución N° 620/15 CGE</a> para
+                                la cohorte 2023.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="../img/esc-rogelio-martinez.webp" alt="" class="horizontal-card-img col-md-6">
+                </div>
+            </div>
+            <!-- FIN DE TARJETAS HORIZONTALES -->
+
+            <!-- Modal formulario contacto-->
+            <div class="modal fade" id="modal-form" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Solicitar información</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- formulario -->
+                            <form action="enfermeria.php" method="POST" class="form-enfermeria row">
+
+                                <div class="form-floating mb-3 col-12">
+                                    <input type="text" name="name" class="form-control" id="floatingInput"
+                                        placeholder="Ingresa tu nombre" autocapitalize="words" required>
+                                    <label for="floatingInput">Nombre</label>
+                                </div>
+
+                                <div class="form-floating mb-3 col-12">
+                                    <input type="text" name="last-name" class="form-control" id="floatingPassword"
+                                        placeholder="Apellido" autocapitalize="words" required>
+                                    <label for="floatingInput">Apellido</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="email" name="email" class="form-control" id="floatingPassword"
+                                        placeholder="nombre@hosting.com" required>
+                                    <label for="floatingInput">Correo Electrónico</label>
+                                </div>
+
+                                <div class="form-floating mb-3 col-4">
+                                    <input type="telephone" name="codigo-area" class="form-control"
+                                        id="floatingPassword" placeholder="Ingrese su código de área sin 0" required>
+                                    <label for="floatingInput">Código de Área</label>
+                                </div>
+
+                                <div class="form-floating mb-3 col-8">
+                                    <input type="telephone" name="celular" class="form-control" id="floatingPassword"
+                                        placeholder="Ingrese su número celular sin 15" required>
+                                    <label for="floatingInput">Número Celular</label>
+                                </div>
+                                <div class="form-floating m-auto col-8">
+                                    <textarea class="form-control" name="message" autocapitalize="sentences"
+                                        placeholder="Leave a comment here" id="floatingTextarea2"
+                                        style="height: 100px;;"></textarea>
+                                    <label for="floatingTextarea2">Dejanos tu consulta</label>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                            <button type="submit" name="enviar"
+                                class="btn btn-outline-success mx-auto mt-2 mb-3 col-3 col-lg-2">
+                                Enviar
+                            </button>
+                        </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Cerrar</button>
+                        </div>
                     </div>
                 </div>
-                <img src="../img/esc-rogelio-martinez.webp" alt="" class="horizontal-card-img col-md-6">
             </div>
-        </div>
-        <!-- FIN DE TARJETAS HORIZONTALES -->
     </main>
 
-    <footer class="footer">
-        <div class="footer-nav">
-            <ul class="footer-nav-links">
-                <li class="footer-nav-li"><a href="../index.html" class="footer-nav-a">Inicio</a></li>
-                <li class="footer-nav-li"><a href="./pages/institucional.html" class="footer-nav-a">Institucional</a></li>
-                <li class="footer-nav-li"><a href="./pages/enfermeria.html" class="footer-nav-a">Enfermería</a></li>
-                <li class="footer-nav-li"><a href="./pages/contacto.html" class="footer-nav-a">Contacto</a></li>
-            </ul>
+    <!-- footer principal -->
+    <footer class="footer container-fluid">
+        <div class="row">
+
+            <!-- footer-nav -->
+            <div class="footer-nav col-12 col-md-4 mb-4">
+                <ul class="footer-nav-links">
+                    <li class="footer-nav-li"><a href="../index.html" class="footer-nav-a">Inicio</a></li>
+                    <li class="footer-nav-li"><a href="../pages/institucional.html"
+                            class="footer-nav-a">Institucional</a>
+                    </li>
+                    <li class="footer-nav-li"><a href="../pages/enfermeria.html" class="footer-nav-a">Enfermería</a></li>
+                    <li class="footer-nav-li"><a class="footer-nav-a" data-bs-toggle="modal"
+                            data-bs-target="#modal-form" href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- footer-logo -->
+            <div class="footer-brand col-12 col-md-4 mb-4 d-flex">
+                <img src="../img/logo-png.png" alt="" class="img-fluid">
+            </div>
+
+            <!-- footer-datos -->
+            <div class="footer-datos col-12 col-md
+            -4 d-flex flex-column justify-content-center">
+                <h3 class="footer-datos-nombre">
+                    INSTITUTO SUPERIOR VILLAGUAY
+                </h3>
+                <p class="footer-datos-text">25 de mayo y Rivadavia <br>
+                    info@isv.edu.ar<br>
+                    Tel.: 03455-420000<br>
+                    Villaguay - Entre Ríos - Argentina
+                </p>
+            </div>
+        </div>
+
+        <!-- footer secundario -->
+        <div class="icd-webdev row">
+            <a href="mailto:cantondebat@outlook.com" class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 mx-auto"><img
+                    src="../img/icd-webdev.png" alt="" class="img-fluid"></a>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

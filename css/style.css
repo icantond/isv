@@ -134,6 +134,15 @@ button {
   overflow: hidden;
 }
 
+.modal-header {
+  background-color: #0f3b6b;
+}
+
+.modal-title {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+
 .card {
   font-size: 1em;
   overflow: hidden;
@@ -201,13 +210,9 @@ button {
 .footer {
   background-color: #0f3b6b;
   min-height: 25vh;
-  padding: 5rem;
+  padding: 2rem 3rem;
   margin-top: 5rem;
   font-family: "Ubuntu", sans-serif;
-}
-
-.footer-nav {
-  width: min-content;
 }
 .footer-nav-a {
   font-size: 1.3rem;
@@ -215,12 +220,28 @@ button {
   display: block;
   margin: 1rem;
   color: #fff;
+  text-align: center;
 }
 .footer-nav-a:hover {
   transform: scale(1.1);
   transition: 300ms;
-  color: #F2DC0C;
+  color: #f2dc0c;
   font-weight: 500;
+}
+.footer-datos {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  display: block;
+  text-align: center;
+}
+.footer-datos-nombre {
+  font-size: 1.2rem;
+}
+.footer-datos-text {
+  font-size: 1rem;
+}
+.footer-brand img {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

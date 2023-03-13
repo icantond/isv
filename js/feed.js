@@ -18,7 +18,7 @@ xhr.onload = function () {
                         <img src="${post.content.match(/src="(.*?)"/)[1]}" alt="Post Image" class="feed-card-img card-img-top">
                         <div class="card-body">
                             <h4 class="card-text">${post.title}</h4>
-                            <a href="${post.url}" target="_blank" class="btn btn-outline-primary btn-sm feed-btn">Leer más</a>
+                            <a href="${post.url}" target="_blank" class="btn btn-outline-primary btn-sm feed-btn mx-auto">Leer más</a>
                         </div>
                     </div>
                 </div>
