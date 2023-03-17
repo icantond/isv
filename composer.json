@@ -1,0 +1,21 @@
+{
+    "name": "acer/root",
+    "description": "mailer",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Acer\\Root\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "icantond",
+            "email": "cantondebat@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

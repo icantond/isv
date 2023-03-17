@@ -24,7 +24,7 @@
     <!-- <div class="nav-hero-container"> -->
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="index.html">
                 <img class="brand-logo" src="../img/logo-png.png" alt="Logotipo de ISV: Instituto Superior Villaguay">
             </a>
             <h1 class="hidden">Instituto Superior Villaguay</h1>
@@ -34,12 +34,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navbar__list" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 offset-xl-2 navbar-list">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 offset-xl-4 offset-lg-2 navbar-list">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">INICIO</a>
+                        <a class="nav-link" href="index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/institucional.html">INSTITUCIONAL</a>
+                        <a class="nav-link" href="institucional.html">INSTITUCIONAL</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -48,7 +48,7 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../pages/enfermeria.html">Tecnicatura Superior en
+                            <li><a class="dropdown-item" href="enfermeria.html">Tecnicatura Superior en
                                     Enfermería</a></li>
                         </ul>
 
@@ -97,10 +97,12 @@
                             educativa para la modalidad de Educación Técnico Profesional de Nivel Superior en el área
                             Enfermería conforme las disposiciones legales vigentes.
                         </p>
-                        <a class="btn btn-outline-primary btn-md mx-auto" href="#">Más información</a>
+                        <a class="btn btn-outline-primary btn-md mx-auto" data-bs-toggle="modal" data-bs-target="#modal-form" href="#">Más información</a>
                     </div>
                 </div>
-                <img src="../img/carrera-enfermeria.jpg" alt="" class="horizontal-card-img img-enfermeria col-12">
+                <img src="../img/enfermeria-2.png" alt="" class="horizontal-card-img img-enfermeria col-12">
+
+                <!-- <img src="../img/carrera-enfermeria.jpg" alt="" class="horizontal-card-img img-enfermeria col-12"> -->
             </div>
         </div>
         <!-- FIN DE TARJETAS HORIZONTALES -->
@@ -116,7 +118,7 @@
                 <div class="modal-body">
 
                     <!-- formulario -->
-                    <form action="enfermeria.php" method="POST" class="form-enfermeria row">
+                    <form action="phpmailer.php" method="POST" class="form-enfermeria row">
 
                         <div class="form-floating mb-3 col-12">
                             <input type="text" name="name" class="form-control" id="floatingInput"
@@ -157,7 +159,7 @@
 
                 <div class="row">
                     <button type="submit" name="enviar"
-                        class="btn btn-outline-success mx-auto mt-2 mb-3 col-3 col-lg-2 col-xl-1">
+                        class="btn btn-outline-success mx-auto mt-2 mb-3 col-3 col-lg-2">
                         Enviar
                     </button>
                 </div>
@@ -176,11 +178,11 @@
             <!-- footer-nav -->
             <div class="footer-nav col-12 col-md-4 mb-4">
                 <ul class="footer-nav-links">
-                    <li class="footer-nav-li"><a href="../index.html" class="footer-nav-a">Inicio</a></li>
-                    <li class="footer-nav-li"><a href="../pages/institucional.html"
+                    <li class="footer-nav-li"><a href="index.html" class="footer-nav-a">Inicio</a></li>
+                    <li class="footer-nav-li"><a href="institucional.html"
                             class="footer-nav-a">Institucional</a>
                     </li>
-                    <li class="footer-nav-li"><a href="../pages/enfermeria.html" class="footer-nav-a">Enfermería</a>
+                    <li class="footer-nav-li"><a href="enfermeria.html" class="footer-nav-a">Enfermería</a>
                     </li>
                     <li class="footer-nav-li"><a class="footer-nav-a" data-bs-toggle="modal"
                             data-bs-target="#modal-form" href="#">Contacto</a></li>
@@ -216,6 +218,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script>
+        // Obtener el mensaje enviado en la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+
+        // Si el mensaje es "success", mostrar una alerta de éxito
+        if (message === 'success') {
+            new swal("Mensaje enviado", "Gracias por contactarnos. Nos comunicaremos con usted lo antes posible.", "success");
+        }
+        // Si el mensaje es "error", mostrar una alerta de error
+        else if (message === 'error') {
+            new swal("Error al enviar mensaje", "Por favor, inténtelo de nuevo más tarde.", "error");
+        }
+
+    </script>
 
 </body>
 

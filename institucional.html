@@ -24,7 +24,7 @@
     <!-- <div class="nav-hero-container"> -->
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="index.html">
                 <img class="brand-logo" src="../img/logo-png.png" alt="Logotipo de ISV: Instituto Superior Villaguay">
             </a>
             <h1 class="hidden">Instituto Superior Villaguay</h1>
@@ -34,9 +34,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navbar__list" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 offset-xl-2 navbar-list">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 offset-xl-4 offset-lg-2 navbar-list">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">INICIO</a>
+                        <a class="nav-link" href="index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="institucional.html">INSTITUCIONAL</a>
@@ -115,7 +115,7 @@
                         <div class="modal-body">
 
                             <!-- formulario -->
-                            <form action="enfermeria.php" method="POST" class="form-enfermeria row">
+                            <form action="phpmailer.php" method="POST" class="form-enfermeria row">
 
                                 <div class="form-floating mb-3 col-12">
                                     <input type="text" name="name" class="form-control" id="floatingInput"
@@ -155,7 +155,7 @@
                         </div>
 
                         <div class="row">
-                            <button type="submit" name="enviar"
+                            <button type="submit" name="send"
                                 class="btn btn-outline-success mx-auto mt-2 mb-3 col-3 col-lg-2">
                                 Enviar
                             </button>
@@ -168,6 +168,53 @@
                     </div>
                 </div>
             </div>
+
+            <section class="autoridades container">
+                <h3 class="section-header mb-3">Autoridades</h3>
+
+                <div class="card p-3">
+                <div class="row mt-5">
+                    <div class="autoridades col-12 col-lg-6">
+                        <h3 class="autoridades-organizacion mb-4">Instituto Superior Villaguay</h3>
+                        <h4 class="autoridades-cargo">Rectora</h4>
+                        <p class="autoridades-nombre">Lic. Delia Raquel Noguera</p>
+
+                        <h4 class="autoridades-cargo">Apoderada Legal</h4>
+                        <p class="autoridades-nombre">Dra. Débora Siomara Canton Debat</p>
+
+                        <h4 class="autoridades-cargo">Secretaria Superior</h4>
+                        <p class="autoridades-nombre">Lic. Clara Asunción Cuenca</p>
+                    </div>
+
+                    <div class="autoridades  col-12 col-lg-6">
+                        <h3 class="autoridades-organizacion mb-4">Asociación Civil Instituto Educativo Villaguay</h3>
+                        <h4 class="autoridades-cargo">Presidente</h4>
+                        <p class="autoridades-nombre">Dr. Miguel Angel Federick</p>
+
+                        <h4 class="autoridades-cargo">Vicepresidenta</h4>
+                        <p class="autoridades-nombre">Prof. Mirta Zulma Berns</p>
+
+                        <h4 class="autoridades-cargo">Secretaria</h4>
+                        <p class="autoridades-nombre">Prof. Graciela Beatriz González</p>
+
+                        <h4 class="autoridades-cargo">Vocales</h4>
+                        <p class="autoridades-nombre">Sr. José Luis González</p>
+                        <p class="autoridades-nombre">Sr. Juan Ramón Almirón</p>
+                        <p class="autoridades-nombre">Prof. Marta María Meichtry</p>
+                        <p class="autoridades-nombre">Dra. Verónica Rodríguez Siciliano</p>
+
+                        <h4 class="autoridades-cargo">Revisora de Cuentas</h4>
+                        <p class="autoridades-nombre">Lic. Anabel Masini</p>
+
+                        <h4 class="autoridades-cargo">Tesorera</h4>
+                        <p class="autoridades-nombre">CPN Clara Cuenca</p>
+
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
     </main>
 
     <!-- footer principal -->
@@ -177,11 +224,12 @@
             <!-- footer-nav -->
             <div class="footer-nav col-12 col-md-4 mb-4">
                 <ul class="footer-nav-links">
-                    <li class="footer-nav-li"><a href="../index.html" class="footer-nav-a">Inicio</a></li>
-                    <li class="footer-nav-li"><a href="../pages/institucional.html"
+                    <li class="footer-nav-li"><a href="index.html" class="footer-nav-a">Inicio</a></li>
+                    <li class="footer-nav-li"><a href="institucional.html"
                             class="footer-nav-a">Institucional</a>
                     </li>
-                    <li class="footer-nav-li"><a href="../pages/enfermeria.html" class="footer-nav-a">Enfermería</a></li>
+                    <li class="footer-nav-li"><a href="enfermeria.html" class="footer-nav-a">Enfermería</a>
+                    </li>
                     <li class="footer-nav-li"><a class="footer-nav-a" data-bs-toggle="modal"
                             data-bs-target="#modal-form" href="#">Contacto</a></li>
                 </ul>
@@ -217,6 +265,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script>
+        // Obtener el mensaje enviado en la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+
+        // Si el mensaje es "success", mostrar una alerta de éxito
+        if (message === 'success') {
+            new swal("Mensaje enviado", "Gracias por contactarnos. Nos comunicaremos con usted lo antes posible.", "success");
+        }
+        // Si el mensaje es "error", mostrar una alerta de error
+        else if (message === 'error') {
+            new swal("Error al enviar mensaje", "Por favor, inténtelo de nuevo más tarde.", "error");
+        }
+
+    </script>
 
 </body>
 

@@ -7,6 +7,9 @@
 
 html {
     font-size: 16px;
+    @media (max-width: 768px) {
+        font-size: 13px;
+        }
 }
 
 ul,
@@ -52,4 +55,18 @@ main {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: -2rem;
+}
+
+.autoridades{
+    font-family: $primary-font;
+    text-align: center;
+
+    &-cargo{
+        font-size: 1.3rem;
+    }
+
+    &-nombre{
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
 }
