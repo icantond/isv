@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--  created with sitemap generator https://octopus.do  -->
+
+    <url>
+        <loc>https://www.isv.com.ar</loc>
+        <lastmod>2023-03-17</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.isv.com.ar/institucional</loc>
+        <lastmod>2023-03-17</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.isv.com.ar/enfermeria</loc>
+        <lastmod>2023-03-17</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.isv.com.ar/cookies</loc>
+        <lastmod>2023-03-17</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.isv.com.ar/404-error</loc>
+        <lastmod>2023-03-17</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>

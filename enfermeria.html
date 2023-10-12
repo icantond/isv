@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instituto Superior Villaguay - Carrera de Tecnicatura Superior en Enfermeria.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.jpeg">
+    <title>Tecnicatura Superior en Enfermería | Instituto Superior Villaguay</title>
+</head>
+
+<body>
+
+    <!-- Comienzo de Navbar -->
+    <!-- <div class="nav-hero-container"> -->
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-logo" src="../img/logo-png.png" alt="Logotipo de ISV: Instituto Superior Villaguay">
+            </a>
+            <h1 class="hidden">Instituto Superior Villaguay</h1>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar__list" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 offset-xl-4 offset-lg-2 navbar-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="institucional.html">INSTITUCIONAL</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CARRERAS
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="enfermeria.html">Tecnicatura Superior en
+                                    Enfermería</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-form" href="#">CONTACTO</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de Navbar -->
+
+
+    <!-- TARJETAS HORIZONTALES CON LAS CARRERAS OFRECIDAS -->
+    <section class="section-carreras m-lg-5">
+        <h3 class="section-header">Tecnicatura Superior en Enfermeria</h3>
+
+        <div class="card m-5">
+            <div class="row">
+                <div class="col-md-12 px-3 horizontal-card-content">
+                    <div class="card-block px-5">
+                        <h5 class="horizontal-card-uppertext">Comenzó el dictado de clases </h5>
+                        <h4 class="horizontal-card-title">Tecnicatura Superior en Enfermería </h4>
+                        <p class="card-text">
+                            El "Instituto Superior Educativo Villaguay" informa a la comunidad que mediante la
+                            <a href="./img/resolucion-cge.1.pdf" target="_blank">Resolución 0405/2023 del Consejo
+                                General de Educación</a>, ha sido incorporado al sistema de
+                            Enseñanza Oficial y autorizado a dictar, en la ciudad de Villaguay, la carrera "Tecnicatura
+                            Superior en enfermeria", que otorga títulos oficiales de dicha organización gubernamental
+                            con validez nacional.
+                        </p>
+                        <p class="card-text">
+                            Nuestra actividad educativa se rige por las disposiciones de la <a
+                                href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/ley-de-educacion-tecnico-profesional"
+                                target="_blank">Ley de Educacion Tecnico
+                                Profesional N° 26.058</a> en el marco de la normativa relativa a la Educación Superior
+                            en la
+                            formación de Técnicos Superiores en areas ocupacionales específicas y de la Formacion
+                            Profesional en este caso en el area Enfermeria.
+                        </p>
+                        <p class="card-text">
+                            El "Instituto Superior Educativo Villaguay" ha cumplimentado los requisitos estipulados en
+                            la Resolucion N° 0240/13 C.G.E. para la incorporacion de nuevas instituciones a la Ensenanza
+                            Oficial y hemos propuesto una estructura organizacional y funcionamiento academico,
+                            administrativo e institucional que nos permite garantizar la calidad de la propuesta
+                            educativa para la modalidad de Educación Técnico Profesional de Nivel Superior en el área
+                            Enfermería conforme las disposiciones legales vigentes.
+                        </p>
+                        <a class="btn btn-outline-primary btn-md mx-auto" data-bs-toggle="modal" data-bs-target="#modal-form" href="#">Más información</a>
+                    </div>
+                </div>
+                <img src="../img/enfermeria-2.png" alt="" class="horizontal-card-img img-enfermeria col-12">
+
+                <!-- <img src="../img/carrera-enfermeria.jpg" alt="" class="horizontal-card-img img-enfermeria col-12"> -->
+            </div>
+        </div>
+        <!-- FIN DE TARJETAS HORIZONTALES -->
+    </section>
+    <!-- Modal formulario contacto-->
+    <div class="modal fade" id="modal-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Solicitar información</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- formulario -->
+                    <form action="phpmailer.php" method="POST" class="form-enfermeria row">
+
+                        <div class="form-floating mb-3 col-12">
+                            <input type="text" name="name" class="form-control" id="floatingInput"
+                                placeholder="Ingresa tu nombre" autocapitalize="words" required>
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-12">
+                            <input type="text" name="last-name" class="form-control" id="floatingPassword"
+                                placeholder="Apellido" autocapitalize="words" required>
+                            <label for="floatingInput">Apellido</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" name="email" class="form-control" id="floatingPassword"
+                                placeholder="nombre@hosting.com" required>
+                            <label for="floatingInput">Correo Electrónico</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-4">
+                            <input type="telephone" name="codigo-area" class="form-control" id="floatingPassword"
+                                placeholder="Ingrese su código de área sin 0" required>
+                            <label for="floatingInput">Código de Área</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-8">
+                            <input type="telephone" name="celular" class="form-control" id="floatingPassword"
+                                placeholder="Ingrese su número celular sin 15" required>
+                            <label for="floatingInput">Número Celular</label>
+                        </div>
+                        <div class="form-floating m-auto col-8">
+                            <textarea class="form-control" name="message" autocapitalize="sentences"
+                                placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px;;"></textarea>
+                            <label for="floatingTextarea2">Dejanos tu consulta</label>
+                        </div>
+                </div>
+
+                <div class="row">
+                    <button type="submit" name="enviar"
+                        class="btn btn-outline-success mx-auto mt-2 mb-3 col-3 col-lg-2">
+                        Enviar
+                    </button>
+                </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer principal -->
+    <footer class="footer container-fluid">
+        <div class="row">
+
+            <!-- footer-nav -->
+            <div class="footer-nav col-12 col-md-4 mb-4">
+                <ul class="footer-nav-links">
+                    <li class="footer-nav-li"><a href="index.html" class="footer-nav-a">Inicio</a></li>
+                    <li class="footer-nav-li"><a href="institucional.html"
+                            class="footer-nav-a">Institucional</a>
+                    </li>
+                    <li class="footer-nav-li"><a href="enfermeria.html" class="footer-nav-a">Enfermería</a>
+                    </li>
+                    <li class="footer-nav-li"><a class="footer-nav-a" data-bs-toggle="modal"
+                            data-bs-target="#modal-form" href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- footer-logo -->
+            <div class="footer-brand col-12 col-md-4 mb-4 d-flex">
+                <img src="../img/logo-png.png" alt="" class="img-fluid">
+            </div>
+
+            <!-- footer-datos -->
+            <div class="footer-datos col-12 col-md
+            -4 d-flex flex-column justify-content-center">
+                <h3 class="footer-datos-nombre">
+                    INSTITUTO SUPERIOR VILLAGUAY
+                </h3>
+                <p class="footer-datos-text">25 de mayo y Rivadavia <br>
+                    info@isv.edu.ar<br>
+                    Tel.: +549 3455 414360<br>
+                    Villaguay - Entre Ríos - Argentina
+                </p>
+            </div>
+        </div>
+
+        <!-- footer secundario -->
+        <div class="icd-webdev row">
+            <a href="mailto:cantondebat@outlook.com" class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 mx-auto"><img
+                    src="../img/icd-webdev.png" alt="" class="img-fluid"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script>
+        // Obtener el mensaje enviado en la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+
+        // Si el mensaje es "success", mostrar una alerta de éxito
+        if (message === 'success') {
+            new swal("Mensaje enviado", "Gracias por contactarnos. Nos comunicaremos con usted lo antes posible.", "success");
+        }
+        // Si el mensaje es "error", mostrar una alerta de error
+        else if (message === 'error') {
+            new swal("Error al enviar mensaje", "Por favor, inténtelo de nuevo más tarde.", "error");
+        }
+
+    </script>
+
+</body>
+
+</html>
